@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Blake Sykes</title>
 </head>
 <body>
-    <header class="row"></header>
+    <header>
+        <h1 class="centerBoi">Blake Sykes</h1>
+        <div class="centerBoi">Developer - Financial Analyst - Musician</div>
+    </header>
     <div class="row">
-        <div id="left" class="col-md-2, marginSide"></div>
+        <div id="left" class="col-md-2 marginSide"></div>
 
         <!-- START CONTENT ----------------------------------------------- -->
         <article class="col">
-            <div id="displayRow" class="row"></div>
+            <div id="displayRow" class="row">
+        <!-- DISPLAY ROW TEMPLATE ---------------------------------------- -->
+                <div class="displayItem" id="displayTemplate"></div>
+            </div>
             <div id="menuRow" class="row"></div>
         </article>
         <!-- END CONTENT ------------------------------------------------- -->
 
-        <div id="right" class="col-md-2, marginSide"></div>
+        <div id="right" class="col-md-2 marginSide"></div>
     </div>
     
 </body>
+<script src="assets/javascript/script.js"></script>
 </html>

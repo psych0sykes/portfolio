@@ -1,0 +1,45 @@
+#menuRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.portfolioItem {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.portfolioItem p {
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(61, 61, 61), 1px -1px 0 rgb(61, 61, 61), -1px 1px 0 rgb(61, 61, 61), 1px 1px 0 rgb(61, 61, 61);
+    margin-top: 60px;
+}
+.centerBoi {
+    text-justify: center;
+    text-align: center;
+}
+.portfolioItem:hover {
+    background-color: white;
+}
+div.red {
+    background-color: red;
+}div.blue {
+    background-color: blue;
+}div.yellow {
+    background-color: yellow;
+}
+
+/* Display Items */
+.displayItem {
+    z-index: -1;
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+}
+#displayRow {
+    
+}
