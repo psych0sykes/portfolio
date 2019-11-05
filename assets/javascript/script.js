@@ -17,6 +17,7 @@ var colorArray = [
     "red","blue","yellow"
 ];
 var colorCount = 0;
+var menuMoved = false;
 
 function pickColor() {
     console.log("color count: " + colorCount)
@@ -49,19 +50,39 @@ function createPortfolio(a) {
 
 createPortfolio(portfolioItems);
 
-// Populate Display Function
+// Move Menu Down, reveal display
+function moveMenu() {
+    console.log("moving menu...")
+    if(menuMoved === false){
+        $("#menuRow").animate({
+            top: "300"
+        },1000);
+        menuMoved = true;
+    };
+}
 
-function populateDisplay(a) {
-    
+
+// Populate Display Functions
+
+function revealDisplay(a) {
     console.log(a);
+    $("#displayRow").animate({
+        opacity: "100"
+    },5000);
 };
+
+function PopulateDisplay(a) {
+    
+}
 
 // Menu On Click Functions
 
 function menuOnClick() {
     $(".portfolioItem").click(function(){
-        populateDisplay(this.id);
+        revealDisplay(this.id);
+        moveMenu()
     });
+
 };
 
 menuOnClick();
