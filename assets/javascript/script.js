@@ -1,5 +1,4 @@
 
-
 // Portfolio Items Array
 var portfolioItems = [
     ["item","id","url"],
@@ -52,8 +51,8 @@ createPortfolio(portfolioItems);
 
 // Move Menu Down, reveal display
 function moveMenu() {
-    console.log("moving menu...")
     if(menuMoved === false){
+        console.log("moving menu...")
         $("#menuRow").animate({
             top: "300"
         },1000);

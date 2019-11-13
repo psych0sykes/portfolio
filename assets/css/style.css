@@ -57,3 +57,7 @@ div.red {
     justify-content: center;
     opacity: 0;
 }
+#displayContent{
+    justify-content: left;
+    align-content: center;
+}
