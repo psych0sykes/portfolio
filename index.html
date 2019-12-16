@@ -13,9 +13,9 @@
     <title>Blake Sykes</title>
 </head>
 <body>
-    <header>
+    <header style="margin-top: 100px">
         <h1 class="centerBoi">Blake Sykes</h1>
-        <div class="centerBoi">Developer - Financial Analyst - Musician</div>
+        <div class="centerBoi" style="background-color: black; color: white;">Developer - Financial Analyst - Musician</div>
     </header>
     <div class="container">
     <div class="row">
@@ -25,7 +25,18 @@
         <article class="col-md-8">
             <div id="displayRow" class="row">
         <!-- DISPLAY ROW TEMPLATE ---------------------------------------- -->
-                <div class="displayItem" id="displayTemplate"></div>
+                <div class="displayItem" id="displayTemplate">
+                    <div class="row">
+                        <div id="displayIcon" class="col-4" style="background-color: blue; height: 250px;">
+                            
+                        </div>
+                        <div id="displayContent" class="col-8" style="background-color: white; height: 250px;">
+                            <h3 id="displayTitle">Item Title</h3>
+                            <p id="displayDescription">Item description will go here. Maybe a sentence or two.</p>
+                            <a id="displayLink" href="">item link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="menuRow" class="row"></div>
         </article>

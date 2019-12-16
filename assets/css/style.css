@@ -48,7 +48,6 @@ div.red {
     z-index: -1;
     height: 250px;
     width: 100%;
-    background-color: pink;
     overflow: hidden;
     top: 25px;
 }

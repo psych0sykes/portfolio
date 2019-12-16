@@ -1,14 +1,46 @@
 
 // Portfolio Items Array
+// var portfolioItems = [
+//     ["divdiv","divdiv","https://dividv.herokuapp.com","A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database."],
+//     ["linkedin","linkedin","url",""],
+//     ["contact","contact","email",""],
+//     ["SVC","svc","https://simplicityviaclarity.com/",""],
+//     ["subloser.com","subloser","https://psych0sykes.github.io/subloser.com/",""],
+//     ["FOOD FIGHT","foodFight","https://psych0sykes.github.io/unit-4-game/",""],
+//     ["SHAPES!","shapes","https://psych0sykes.github.io/word-game/",""]
+// ];
+
 var portfolioItems = [
-    ["item","id","url"],
-    ["linkedin","linkedin","url"],
-    ["contact","contact","email"],
-    ["SVC","svc","https://simplicityviaclarity.com/"],
-    ["subloser.com","subloser","https://psych0sykes.github.io/subloser.com/"],
-    ["FOOD FIGHT","foodFight","https://psych0sykes.github.io/unit-4-game/"],
-    ["SHAPES!","shapes","https://psych0sykes.github.io/word-game/"]
-];
+    {
+        title: "divdiv",
+        id: "dividv",
+        urlText: "check out the app",
+        url: "https://divdiv.herokuapp.com",
+        description: "A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database."
+    },
+    {
+        title: "linkedin",
+        id: "linkedin",
+        urlText: "view my profile",
+        url: "https://www.linkedin.com/in/blake-sykes-7b5656140/",
+        description: "Currently employed at Castle & Cooke Mortgage as a Financial Analyst."
+    },
+    {
+        title: "contact",
+        id: "contact",
+        urlText: "or email me:",
+        url: "mailto:blakesykes13@gmail.com",
+        description: "call me: 385-445-5016"
+    },
+    {
+        title: "subloser.com",
+        id: "subloser",
+        urlText: "click here",
+        url: "https://subloser.com",
+        description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript."
+    }
+
+]
 
 
 // Color Pick Function
@@ -38,10 +70,10 @@ function createPortfolio(a) {
         let newDiv = $("<div>");
         let newP = $("<p>");
         let newColor = colorArray[pickColor()];
-        $(newP).text(newItem[0]);
+        $(newP).text(newItem.title);
         $(newDiv).append(newP);
         $(newDiv).addClass(newColor);
-        $(newDiv).attr("id",newItem[1]);
+        $(newDiv).attr("id",newItem.id);
         $(newDiv).addClass("portfolioItem");
         $("#menuRow").append(newDiv);
     }
@@ -70,8 +102,12 @@ function revealDisplay(a) {
     },5000);
 };
 
+// Transition Fade
+
 function PopulateDisplay(a) {
+
     
+    $("#displayTitle").html()
 }
 
 // Menu On Click Functions
