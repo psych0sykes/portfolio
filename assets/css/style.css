@@ -59,3 +59,15 @@ div.red {
     justify-content: left;
     align-content: center;
 }
+#displayIcon{
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: 100%;
+}
+
+/* Portfolio Image Classes */
+
+.divdiv{
+    background-image: url("../img/dividv.png");
+    background-color: none;
+};

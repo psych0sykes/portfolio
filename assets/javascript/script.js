@@ -17,7 +17,7 @@ var portfolioItems = [
         urlText: "check out the app",
         url: "https://divdiv.herokuapp.com",
         description: "A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database.",
-        background: ["image","img/divdiv.png"]
+        background: ["image","divdiv"]
     },
     {
         title: "linkedin",
@@ -83,6 +83,9 @@ function createPortfolio(a) {
         $(newDiv).addClass("portfolioItem");
         $(newDiv).attr("name",newItem.id);
         $("#menuRow").append(newDiv);
+        if(newItem.background[0] === "color"){
+            a[i].background.push(newColor)
+        };
     }
 };
 
@@ -101,7 +104,7 @@ function moveMenu() {
 }
 
 
-// Populate Display Functions
+// Reveal Display; moves menu and shows the display item
 
 function revealDisplay() {
     $("#displayRow").animate({
@@ -111,13 +114,26 @@ function revealDisplay() {
 
 // Transition Fade
 
+// Populate Display Function
+
 function populateDisplay(a) {
     console.log("populating " + a.id + "...")
     $("#displayTitle").html(a.title);
     $("#displayDescription").html(a.description);
     $("#displayLink").html(a.urlText);
     $("#displayLink").attr("href",a.url);
-}
+
+    switch (a.background[0]) {
+        case "image":
+            $("#displayIcon").attr("class","col-4 " + a.background[1]);
+            $("#displayIcon").attr("style","background-color: none");
+            break;
+        case "color":
+            $("#displayIcon").attr("style","background-color: " + a.background[1]);
+            $("#displayIcon").attr("class", "col-4");
+            break;
+    };
+};
 
 // Menu On Click Functions
 
