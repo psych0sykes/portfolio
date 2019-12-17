@@ -46,7 +46,6 @@ div.red {
 .displayItem {
     position: absolute;
     z-index: -1;
-    height: 250px;
     width: 100%;
     overflow: hidden;
     top: 25px;
