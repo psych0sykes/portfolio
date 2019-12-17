@@ -73,8 +73,9 @@ function createPortfolio(a) {
         $(newP).text(newItem.title);
         $(newDiv).append(newP);
         $(newDiv).addClass(newColor);
-        $(newDiv).attr("id",newItem.id);
+        $(newDiv).attr("id",i);
         $(newDiv).addClass("portfolioItem");
+        $(newDiv).attr("name",newItem.id);
         $("#menuRow").append(newDiv);
     }
 };
@@ -95,8 +96,7 @@ function moveMenu() {
 
 // Populate Display Functions
 
-function revealDisplay(a) {
-    console.log(a);
+function revealDisplay() {
     $("#displayRow").animate({
         opacity: "100"
     },5000);
@@ -104,18 +104,22 @@ function revealDisplay(a) {
 
 // Transition Fade
 
-function PopulateDisplay(a) {
-
-    
-    $("#displayTitle").html()
+function populateDisplay(a) {
+    console.log("populating " + a.id + "...")
+    $("#displayTitle").html(a.title);
+    $("#displayDescription").html(a.description);
+    $("#displayLink").html(a.urlText);
+    $("#displayLink").attr("href",a.url);
 }
 
 // Menu On Click Functions
 
 function menuOnClick() {
     $(".portfolioItem").click(function(){
-        revealDisplay(this.id);
-        moveMenu()
+        console.log(this.id)
+        populateDisplay(portfolioItems[this.id]);
+        revealDisplay();
+        moveMenu();
     });
 
 };
