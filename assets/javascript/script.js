@@ -16,34 +16,39 @@ var portfolioItems = [
         id: "dividv",
         urlText: "check out the app",
         url: "https://divdiv.herokuapp.com",
-        description: "A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database."
+        description: "A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database.",
+        background: ["image","img/divdiv.png"]
     },
     {
         title: "linkedin",
         id: "linkedin",
         urlText: "view my profile",
         url: "https://www.linkedin.com/in/blake-sykes-7b5656140/",
-        description: "Currently employed at Castle & Cooke Mortgage as a Financial Analyst."
+        description: "Currently employed at Castle & Cooke Mortgage as a Financial Analyst.",
+        background: ["color"]
     },
     {
         title: "contact",
         id: "contact",
         urlText: "or email me:",
         url: "mailto:blakesykes13@gmail.com",
-        description: "call me: 385-445-5016"
+        description: "call me: 385-445-5016",
+        background: ["color"]
     },
     {
         title: "subloser.com",
         id: "subloser",
         urlText: "click here",
         url: "https://subloser.com",
-        description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript."
+        description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript.",
+        background: ["color"]
     }
 
-]
+];
 
 
 // Color Pick Function
+
 var colorArray = [
     "red","blue","yellow"
 ];
@@ -64,6 +69,7 @@ function pickColor() {
 
 
 // Create div boxes from array
+
 function createPortfolio(a) {
     for (i=0;i<a.length;i++){
         let newItem = a[i];
@@ -83,6 +89,7 @@ function createPortfolio(a) {
 createPortfolio(portfolioItems);
 
 // Move Menu Down, reveal display
+
 function moveMenu() {
     if(menuMoved === false){
         console.log("moving menu...")
