@@ -42,6 +42,14 @@ var portfolioItems = [
         url: "https://subloser.com",
         description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript.",
         background: ["color"]
+    },
+    {
+        title: "about me",
+        id: "aboutMe",
+        urlText: "",
+        url: "",
+        description: "I'm going to write something a little bit better for this. But for now this is just a placeholder.",
+        background: ["color"]
     }
 
 ];
