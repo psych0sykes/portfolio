@@ -30,7 +30,7 @@ var portfolioItems = [
     {
         title: "contact",
         id: "contact",
-        urlText: "or email me:",
+        urlText: "or email me: blakesykes13@gmail.com",
         url: "mailto:blakesykes13@gmail.com",
         description: "call me: 385-445-5016",
         background: ["color"]
@@ -39,7 +39,7 @@ var portfolioItems = [
         title: "subloser.com",
         id: "subloser",
         urlText: "click here",
-        url: "https://subloser.com",
+        url: "https://psych0sykes.github.io/subloser.com/",
         description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript.",
         background: ["color"]
     },
