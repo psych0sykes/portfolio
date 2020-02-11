@@ -15,8 +15,8 @@ var portfolioItems = [
         title: "divdiv",
         id: "dividv",
         urlText: "check out the app",
-        url: "https://divdiv.herokuapp.com",
-        description: "A living social art project. Create your own div to add to the always growing canvas. Built with Handlebars, Sequelize and Huebee. Hosted on Herkou with a JawsDB mySQL database.",
+        url: "https://stark-inlet-81881.herokuapp.com/",
+        description: "divdiv is a fundraising platform I built with React, Node, and MongoDB. Each time a user donates to a campaign, they get to add a colored div to the campaign canvas. Payments are processed throught the Stripe API. Go check it out! This is my favorite, and best app.",
         background: ["image","divdiv"]
     },
     {
@@ -36,19 +36,27 @@ var portfolioItems = [
         background: ["color"]
     },
     {
-        title: "subloser.com",
+        title: "subloser",
         id: "subloser",
-        urlText: "click here",
+        urlText: "subloser.com",
         url: "https://psych0sykes.github.io/subloser.com/",
-        description: "I write, record, produce and perform music under the name subloser. This is the website I made for myself. Built with HTML, CSS, and Javascript.",
-        background: ["color"]
+        description: "I write, record, produce and perform music under the name subloser. My music is distrubted on Spotify, Apple Music and really everywhere you can stream music. Click on the link to go to my webstie!",
+        background: ["image","subloser"]
     },
     {
         title: "about me",
         id: "aboutMe",
         urlText: "",
         url: "",
-        description: "I'm going to write something a little bit better for this. But for now this is just a placeholder.",
+        description: "My name is Blake. I am a Full Stack Developer, Financial Analyst, and Musician. Be sure to look at my app divdiv, it's my best work. If you like music, listen to my music.",
+        background: ["color"]
+    },
+    {
+        title: "github",
+        id: "github",
+        urlText: "see my profile",
+        url: "https://github.com/psych0sykes/",
+        description: "Dig into into my projects on GitHub. All the code, all the commits, all in one place.",
         background: ["color"]
     }
 
@@ -103,7 +111,7 @@ createPortfolio(portfolioItems);
 
 function moveMenu() {
     if(menuMoved === false){
-        console.log("moving menu...")
+        // console.log("moving menu...")
         $("#menuRow").animate({
             top: "300"
         },1000);
@@ -125,11 +133,12 @@ function revealDisplay() {
 // Populate Display Function
 
 function populateDisplay(a) {
-    console.log("populating " + a.id + "...")
+    // console.log("populating " + a.id + "...")
     $("#displayTitle").html(a.title);
     $("#displayDescription").html(a.description);
     $("#displayLink").html(a.urlText);
     $("#displayLink").attr("href",a.url);
+    $("#displayIcon").attr("href",a.url);
 
     switch (a.background[0]) {
         case "image":
@@ -143,12 +152,21 @@ function populateDisplay(a) {
     };
 };
 
+// Hide Prompt
+
+function hidePrompt() {
+    $("#clickPrompt").animate({
+        opacity: "0"
+    },500);
+};
+
 // Menu On Click Functions
 
 function menuOnClick() {
     $(".portfolioItem").click(function(){
-        console.log(this.id)
+        // console.log(this.id)
         populateDisplay(portfolioItems[this.id]);
+        hidePrompt();
         revealDisplay();
         moveMenu();
     });

@@ -20,6 +20,7 @@
     width: 125px;
     height: 125px;
     margin: 10px;
+    box-shadow: 5px 10px 10px #aaaaaa;
 }
 .portfolioItem p {
     font-size: 20px;
@@ -33,6 +34,7 @@
 }
 .portfolioItem:hover {
     background-color: white;
+    cursor: pointer;
 }
 div.red {
     background-color: red;
@@ -60,15 +62,24 @@ div.yellow {
 #displayContent{
     justify-content: left;
     align-content: center;
+    height: 300px;
 }
 #displayIcon{
     background-repeat: no-repeat;
     height: 250px;
     background-size: 100%;
 }
-
+#clickPrompt {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    text-align: center;  
+}
 /* Portfolio Image Classes */
 
 .divdiv{
-    background-image: url("../img/dividv.png");
+    background-image: url("../img/divdiv.jpg");
+}
+.subloser{
+    background-image: url("../img/subloser.jpg");
 }
