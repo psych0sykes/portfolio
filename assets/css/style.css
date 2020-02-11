@@ -36,15 +36,6 @@
     background-color: white;
     cursor: pointer;
 }
-div.red {
-    background-color: red;
-}
-div.blue {
-    background-color: blue;
-}
-div.yellow {
-    background-color: yellow;
-}
 
 /* Display Items */
 .displayItem {

@@ -66,7 +66,7 @@ var portfolioItems = [
 // Color Pick Function
 
 var colorArray = [
-    "red","blue","yellow"
+    "#F8EA8C","#FF4500","#F4A843","#F7DE3D"
 ];
 var colorCount = 0;
 var menuMoved = false;
@@ -94,7 +94,7 @@ function createPortfolio(a) {
         let newColor = colorArray[pickColor()];
         $(newP).text(newItem.title);
         $(newDiv).append(newP);
-        $(newDiv).addClass(newColor);
+        $(newDiv).attr("style","background-color: " + newColor);
         $(newDiv).attr("id",i);
         $(newDiv).addClass("portfolioItem");
         $(newDiv).attr("name",newItem.id);
