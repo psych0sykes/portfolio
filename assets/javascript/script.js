@@ -15,7 +15,7 @@ var portfolioItems = [
         title: "divdiv",
         id: "dividv",
         urlText: "check out the app",
-        url: "https://stark-inlet-81881.herokuapp.com/",
+        url: "https://divdiv.herokuapp.com/",
         description: "divdiv is a fundraising platform I built with React, Node, and MongoDB. Each time a user donates to a campaign, they get to add a colored div to the campaign canvas. Payments are processed throught the Stripe API. Go check it out! This is my favorite, and best app.",
         background: ["image","divdiv"]
     },
