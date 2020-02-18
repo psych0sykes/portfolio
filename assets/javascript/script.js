@@ -63,7 +63,7 @@ var portfolioItems = [
         title: "resume",
         id: "resume",
         urlText: "view my resume",
-        url: "https://github.com/psych0sykes/",
+        url: "https://drive.google.com/file/d/1xvg0Ak8Wv-NRAl3eadI5p1HkzkL6LsD7/view?usp=sharing",
         description: "Click the link below to see a fresh copy of my resume.",
         background: ["color"]
     }
