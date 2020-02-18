@@ -58,6 +58,14 @@ var portfolioItems = [
         url: "https://github.com/psych0sykes/",
         description: "Dig into into my projects on GitHub. All the code, all the commits, all in one place.",
         background: ["color"]
+    },
+    {
+        title: "resume",
+        id: "resume",
+        urlText: "view my resume",
+        url: "https://github.com/psych0sykes/",
+        description: "Click the link below to see a fresh copy of my resume.",
+        background: ["color"]
     }
 
 ];
