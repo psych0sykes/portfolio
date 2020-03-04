@@ -1,3 +1,4 @@
-# Hi, I'm Blake
+# Blake's Old Portfolio
+After learning some new skills, I rebuilt my portfolio with React. This is the old version that I built using jQuery.
 
-Here's an opportunity to learn a bit about me. Check out the deployment of my portfolio at: https://psych0sykes.github.io/portfolio/
+Deployed to Github Pages at: https://psych0sykes.github.io/portfolio/
